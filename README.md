@@ -8,6 +8,8 @@
 
 This preset allows you to create a Chrome/Edge/Chromium extension using TypeScript and Vue.js for the UI
 
+You can use this preset for creating your own extension, but please leave a ⭐ to this repo if is useful 😀
+
 ### Explanation
 Keep in mind this preset works compiling your changes from typescript to javascript and using the javascript in the browser extension.
 
