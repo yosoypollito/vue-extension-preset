@@ -1,0 +1,29 @@
+{
+  "name": "vue.js-extension-preset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:ui": "cd ui && npm run build",
+    "build:ui:watch": "cd ui && npm run build-only:watch",
+    "build:scripts": "npx tsc",
+    "build:extension": "sh ./scripts/build.sh",
+    "dev:ui": "cd ui && npm run dev",
+    "dev:scripts": "npx tsc -w",
+    "dev:extension": "sh ./scripts/dev.sh",
+    "test:ui:unit": "cd ui && npm run test:unit",
+    "test:ui:e2e": "cd ui && npm run test:e2e",
+    "test:ui:e2e:dev": "cd ui && npm run test:e2e:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./ui"
+  ],
+  "devDependencies": {
+    "concurrently": "8.2.0",
+    "typescript": "5.1.6"
+  },
+  "type": "module"
+}
