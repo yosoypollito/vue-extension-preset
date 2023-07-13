@@ -11,12 +11,12 @@ This preset allows you to create a Chrome/Edge/Chromium extension using TypeScri
 You can use this preset for creating your own extension, but please leave a ⭐ to this repo if is useful 😀
 
 ### Explanation
-Keep in mind this preset works compiling your changes from typescript to javascript and using the javascript in the browser extension.
+Keep in mind this preset works by compiling your changes from typescript to javascript and then using the javascript in the browser extension.
 
-That means that folder which contains the compiled typescript `dist/` is the folder you are going to `load as unpacked` extension.
+The folder which contains the compiled typescript `dist/` is the folder you are going to `load as unpacked` extension.
 
 ## Usage
-First clone this repo and install Dependencies 
+First, clone this repo and install Dependencies.
 ```bash
 npm install
 ```
@@ -26,38 +26,37 @@ npm install
 ```bash
 npm run dev:extension
 ```
-This command is going to run `scripts/dev.sh`.
-You can go check and see what it does
+This command runs `scripts/dev.sh`.
+> You can open the script to have a look at its functionality.
 
-Note: This command dont run the tests
+Note: This command does not execute unit testing.
 
 ### Build command
 
 ```bash
 npm run build:extension
 ```
-This command is going to run `scripts/build.sh`
+This command runs `scripts/build.sh`
+> You can open the script to have a look at its functionality.
 
-You can go check and see what it does
-
-Note: This command run the tests
+Note: This command executes testing.
 
 ### Other commands
 
 ```bash
-build:ui # builds the vue.js app using the normal vue proyect command
-build:ui:watch # builds and watch the changes of the vue.js app
+build:ui # builds the vue.js app using the normal vue project command
+build:ui:watch # builds and watches the changes of the vue.js app
 build:scripts # build the scripts of the extension and copy the manifest.json file to dist
 
 build:extension # build and execute all the test of the extension (production command)
 
-dev:ui # runs the vue.js app normal vue proyect development command
+dev:ui # runs the vue.js app normal vue project development command
 
-dev:scripts # compile and keeps watching changes of extension scripts
+dev:scripts # compiles and begins watching changes of extension scripts
 
 dev:extension # Runs the needed command to compile and watch for changes in Extension scripts and Vue.js App
 ```
 
 ### Notes
 
-This preset uses `workspaces` for handle the Vue.js App `deps` and Extension scripts `deps` in same folder.
+This preset uses `workspaces`` for handling the Vue.js App `deps`` and Extension script's `deps`, in same folder.
